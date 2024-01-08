@@ -582,7 +582,7 @@ the CRD. You can create the supply chain by downloading another supply chain and
    For example:
 
    ```console
-   $ kubectl get ClusterSupplyChain source-test-scan-to-url -n my-apps -oyaml >> ~/supply-chain.yaml
+   $ kubectl get ClusterSupplyChain source-test-scan-to-url -oyaml >> ~/supply-chain.yaml
    ```
 
 3. Edit the downloaded supply-chain definition as follows:
