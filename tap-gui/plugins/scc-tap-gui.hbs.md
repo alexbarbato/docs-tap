@@ -563,21 +563,18 @@ the CRD. You can create the supply chain by downloading another supply chain and
 1. List the existing supply chains in your cluster by running:
 
    ```console
-   kubectl get ClusterSupplyChain -n NAMESPACE
+   kubectl get ClusterSupplyChain
    ```
-
-   Where `NAMESPACE` is your namespace. For example, `my-apps`.
 
 2. Download one of them to a file by running:
 
    ```console
-   kubectl get ClusterSupplyChain SUPPLY-CHAIN -n NAMESPACE -oyaml >> ~/supply-chain.yaml
+   kubectl get ClusterSupplyChain SUPPLY-CHAIN -oyaml >> ~/supply-chain.yaml
    ```
 
    Where:
 
    - `SUPPLY-CHAIN` is the name a supply chain you discovered earlier.
-   - `NAMESPACE` is your namespace.
 
    For example:
 
@@ -641,22 +638,19 @@ To define a new `ClusterTemplate`:
 1. List existing `ClusterTemplate` resources by running:
 
    ```console
-   kubectl get ClusterTemplates -n NAMESPACE
+   kubectl get ClusterTemplates
    ```
-
-   Where `NAMESPACE` is your namespace
 
 2. Download a `ClusterTemplate` resource that you found by running:
 
    ```console
-   kubectl get ClusterTemplates TEMPLATE-NAME -n NAMESPACE -oyaml >> ~/cluster-template.yaml
+   kubectl get ClusterTemplates TEMPLATE-NAME -oyaml >> ~/cluster-template.yaml
    ```
 
    Where:
 
    - `TEMPLATE-NAME` is the name of the `ClusterTemplate` resource you found. For example,
      `config-writer-template`.
-   - `NAMESPACE` is your namespace. For example, `my-apps`.
 
    For example:
 
